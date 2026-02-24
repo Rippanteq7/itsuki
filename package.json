@@ -19,14 +19,12 @@
   },
   "license": "MIT",
   "author": "Itsukichann",
-
   "main": "lib/index.js",
   "files": [
     "lib/*",
     "WAProto/*",
     "engine-requirements.js"
   ],
-
   "scripts": {
     "changelog:last": "conventional-changelog -p angular -r 2",
     "changelog:preview": "conventional-changelog -p angular -u",
@@ -37,12 +35,11 @@
     "release": "release-it",
     "test": "jest"
   },
-
   "dependencies": {
     "@hapi/boom": "^9.1.3",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@cacheable/node-cache": "1.5.3",
-    "@itsukichan/libsignal-node": "^1.0.1",
+    "@itsukichan/libsignal-node": "github:pluvism/libsignal-rs",
     "async-mutex": "^0.5.0",
     "audio-decode": "^2.2.2",
     "cache-manager": "^5.7.6",
@@ -57,7 +54,6 @@
     "qrcode-terminal": "^0.12.0",
     "ws": "^8.13.0"
   },
-
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^16.0.0",
@@ -77,28 +73,22 @@
     "typedoc-plugin-markdown": "4.4.2",
     "typescript": "^5.8.2"
   },
-
   "peerDependencies": {
-    "jimp": "^0.22.12", 
+    "jimp": "^1.6.0", 
     "sharp": "*"
   },
-
   "peerDependenciesMeta": {
     "jimp": {
       "optional": true
     }
   },
-
   "packageManager": "yarn@1.22.19",
-
   "engines": {
     "node": ">=20.0.0"
   },
-
   "directories": {
     "lib": "lib"
   },
-
   "bugs": {
     "url": "https://github.com/Itsukichann/Baileys/issues"
   }
